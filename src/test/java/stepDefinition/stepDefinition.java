@@ -17,6 +17,7 @@ public class stepDefinition {
 	  @Given("^user is on login page$")
 	    public void user_is_on_login_page() {
 		 System.out.println("github pavan first commit");
+		 System.out.println("github pavan second commit");
 	    	driver = Testing.MMC.Browser.BrowserType("chrome");
 	 		driver.get("https://auth.testproject.io/auth/realms/TP/protocol/openid-connect/auth?client_id=tp.app&redirect_uri=https%3A%2F%2Fapp.testproject.io%2Fcallback.html&response_type=id_token%20token&scope=openid%20profile&state=6b6f6b8b33ab425c9b11b7c69ccb9729&nonce=82208088bd92425bae02a7bab27e9f4c");
 	     
