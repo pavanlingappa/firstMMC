@@ -1,296 +1,149 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/java/features/loginBDD.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/java/features/linkedin.feature");
 formatter.feature({
-  "line": 2,
-  "name": "I want to test the Login functionality",
-  "description": "",
-  "id": "i-want-to-test-the-login-functionality",
-  "keyword": "Feature"
+  "comments": [
+    {
+      "line": 1,
+      "value": "#Author: your.email@your.domain.com"
+    },
+    {
+      "line": 2,
+      "value": "#Keywords Summary :"
+    },
+    {
+      "line": 3,
+      "value": "#Feature: List of scenarios."
+    },
+    {
+      "line": 4,
+      "value": "#Scenario: Business rule through list of steps with arguments."
+    },
+    {
+      "line": 5,
+      "value": "#Given: Some precondition step"
+    },
+    {
+      "line": 6,
+      "value": "#When: Some key actions"
+    },
+    {
+      "line": 7,
+      "value": "#Then: To observe outcomes or validation"
+    },
+    {
+      "line": 8,
+      "value": "#And,But: To enumerate more Given,When,Then steps"
+    },
+    {
+      "line": 9,
+      "value": "#Scenario Outline: List of steps for data-driven as an Examples and \u003cplaceholder\u003e"
+    },
+    {
+      "line": 10,
+      "value": "#Examples: Container for s table"
+    },
+    {
+      "line": 11,
+      "value": "#Background: List of steps run before each of the scenarios"
+    },
+    {
+      "line": 12,
+      "value": "#\"\"\" (Doc Strings)"
+    },
+    {
+      "line": 13,
+      "value": "#| (Data Tables)"
+    },
+    {
+      "line": 14,
+      "value": "#@ (Tags/Labels):To group Scenarios"
+    },
+    {
+      "line": 15,
+      "value": "#\u003c\u003e (placeholder)"
+    },
+    {
+      "line": 16,
+      "value": "#\"\""
+    },
+    {
+      "line": 17,
+      "value": "## (Comments)"
+    },
+    {
+      "line": 18,
+      "value": "#Sample Feature Definition Template"
+    }
+  ],
+  "line": 20,
+  "name": "Title of your feature",
+  "description": "I want to use this template for my feature file",
+  "id": "title-of-your-feature",
+  "keyword": "Feature",
+  "tags": [
+    {
+      "line": 19,
+      "name": "@tag"
+    }
+  ]
 });
 formatter.scenario({
-  "line": 6,
-  "name": "SDET Login Test",
+  "line": 24,
+  "name": "Title of your scenario",
   "description": "",
-  "id": "i-want-to-test-the-login-functionality;sdet-login-test",
+  "id": "title-of-your-feature;title-of-your-scenario",
   "type": "scenario",
   "keyword": "Scenario",
   "tags": [
     {
-      "line": 5,
-      "name": "@Mobtest1"
-    }
-  ]
-});
-formatter.step({
-  "line": 7,
-  "name": "user is on login page",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 8,
-  "name": "user login with email \"kiran@gmail.com\" and password \"helo\"",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 9,
-  "name": "validate the outcomes",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "stepDefinition.user_is_on_login_page()"
-});
-formatter.result({
-  "duration": 64975228500,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "kiran@gmail.com",
-      "offset": 23
-    },
-    {
-      "val": "helo",
-      "offset": 54
-    }
-  ],
-  "location": "stepDefinition.user_is_given_the_email_something_and_password_something(String,String)"
-});
-formatter.result({
-  "duration": 4110397100,
-  "status": "passed"
-});
-formatter.match({
-  "location": "stepDefinition.validate_the_outcomes()"
-});
-formatter.result({
-  "duration": 4110806100,
-  "status": "passed"
-});
-formatter.scenarioOutline({
-  "line": 13,
-  "name": "SDET Login Test",
-  "description": "",
-  "id": "i-want-to-test-the-login-functionality;sdet-login-test",
-  "type": "scenario_outline",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 12,
-      "name": "@Mobtest2"
-    }
-  ]
-});
-formatter.step({
-  "line": 14,
-  "name": "user is on login page",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 15,
-  "name": "user is given the email \u003cusername\u003e",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 16,
-  "name": "user is given the password \u003cpassword\u003e",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 17,
-  "name": "validate the outcomes",
-  "keyword": "Then "
-});
-formatter.examples({
-  "line": 20,
-  "name": "",
-  "description": "",
-  "id": "i-want-to-test-the-login-functionality;sdet-login-test;",
-  "rows": [
-    {
-      "cells": [
-        "username",
-        "password"
-      ],
-      "line": 21,
-      "id": "i-want-to-test-the-login-functionality;sdet-login-test;;1"
-    },
-    {
-      "cells": [
-        "pk970750@gmail.com",
-        "Pavan@1996"
-      ],
-      "line": 22,
-      "id": "i-want-to-test-the-login-functionality;sdet-login-test;;2"
-    },
-    {
-      "cells": [
-        "pavankumarm@gmail.com",
-        "Koushk213"
-      ],
       "line": 23,
-      "id": "i-want-to-test-the-login-functionality;sdet-login-test;;3"
-    }
-  ],
-  "keyword": "Examples"
-});
-formatter.scenario({
-  "line": 22,
-  "name": "SDET Login Test",
-  "description": "",
-  "id": "i-want-to-test-the-login-functionality;sdet-login-test;;2",
-  "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 12,
-      "name": "@Mobtest2"
+      "name": "@tag1"
     }
   ]
 });
 formatter.step({
-  "line": 14,
-  "name": "user is on login page",
+  "line": 25,
+  "name": "user is on linkedin page",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 15,
-  "name": "user is given the email pk970750@gmail.com",
-  "matchedColumns": [
-    0
-  ],
-  "keyword": "When "
-});
-formatter.step({
-  "line": 16,
-  "name": "user is given the password Pavan@1996",
-  "matchedColumns": [
-    1
-  ],
+  "line": 26,
+  "name": "details are given",
   "keyword": "And "
 });
 formatter.step({
-  "line": 17,
-  "name": "validate the outcomes",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "stepDefinition.user_is_on_login_page()"
-});
-formatter.result({
-  "duration": 15957795900,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "pk970750@gmail.com",
-      "offset": 24
-    }
-  ],
-  "location": "stepDefinition.user_is_given_the_email(String)"
-});
-formatter.result({
-  "duration": 2648828800,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Pavan@1996",
-      "offset": 27
-    }
-  ],
-  "location": "stepDefinition.user_is_given_the_password(String)"
-});
-formatter.result({
-  "duration": 3037591800,
-  "status": "passed"
-});
-formatter.match({
-  "location": "stepDefinition.validate_the_outcomes()"
-});
-formatter.result({
-  "duration": 1454885300,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 23,
-  "name": "SDET Login Test",
-  "description": "",
-  "id": "i-want-to-test-the-login-functionality;sdet-login-test;;3",
-  "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 12,
-      "name": "@Mobtest2"
-    }
-  ]
-});
-formatter.step({
-  "line": 14,
-  "name": "user is on login page",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 15,
-  "name": "user is given the email pavankumarm@gmail.com",
-  "matchedColumns": [
-    0
-  ],
+  "line": 27,
+  "name": "click on sigin button",
   "keyword": "When "
 });
 formatter.step({
-  "line": 16,
-  "name": "user is given the password Koushk213",
-  "matchedColumns": [
-    1
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 17,
-  "name": "validate the outcomes",
+  "line": 28,
+  "name": "validate the user",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "stepDefinition.user_is_on_login_page()"
+  "location": "linkedinStepImplementation.user_is_on_linkedin_page()"
 });
 formatter.result({
-  "duration": 6918803200,
-  "status": "passed"
+  "duration": 8635038900,
+  "error_message": "cucumber.api.PendingException: TODO: implement me\r\n\tat stepDefinition.linkedinStepImplementation.user_is_on_linkedin_page(linkedinStepImplementation.java:23)\r\n\tat ✽.Given user is on linkedin page(src/test/java/features/linkedin.feature:25)\r\n",
+  "status": "pending"
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "pavankumarm@gmail.com",
-      "offset": 24
-    }
-  ],
-  "location": "stepDefinition.user_is_given_the_email(String)"
+  "location": "linkedinStepImplementation.details_are_given()"
 });
 formatter.result({
-  "duration": 124500700,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "Koushk213",
-      "offset": 27
-    }
-  ],
-  "location": "stepDefinition.user_is_given_the_password(String)"
+  "location": "linkedinStepImplementation.click_on_sigin_button()"
 });
 formatter.result({
-  "duration": 693296900,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
-  "location": "stepDefinition.validate_the_outcomes()"
+  "location": "linkedinStepImplementation.validate_the_user()"
 });
 formatter.result({
-  "duration": 1153716000,
-  "status": "passed"
+  "status": "skipped"
 });
 });

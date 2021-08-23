@@ -9,7 +9,7 @@ import cucumber.api.junit.Cucumber;
 
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features="src/test/java/features/loginBDD.feature", glue="stepDefinition", monochrome = true, plugin = {"pretty", "html:target/cucumber"} )
+@CucumberOptions(features="src/test/java/features/linkedin.feature", glue="stepDefinition", monochrome = true, plugin = {"pretty", "html:target/cucumber"} )
 public class TestRunner {
 
 }
